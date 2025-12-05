@@ -1,0 +1,165 @@
+.root {
+  background-image: url("/images/redwhitebackground.png");
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 18px;
+  padding-bottom: 40px;
+}
+
+
+.inner {
+  z-index: 2;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 50px 60px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.heading {
+  font-size: 46px;
+  font-weight: 900;
+  color: #222;
+}
+
+.subtext {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #444;
+  max-width: 420px;
+}
+
+.infoGroup {
+  margin-top: 10px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 900;
+  color: #ff4040;
+  margin-bottom: 4px;
+}
+
+.info {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+}
+
+.address {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff4040;
+}
+
+.address a {
+  color: #ff4040;
+  text-decoration: none;
+}
+
+.address a:hover {
+  text-decoration: underline;
+}
+
+.form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.input input {
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.textarea textarea {
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.submit {
+  background: #ff4040;
+  font-size: 18px;
+  font-weight: 900;
+  padding: 14px 6;
+  border-radius: 10px;
+  color: white;
+  margin-top: 10px;
+  transition: 0.25s ease;
+}
+
+.submit:hover {
+  background: #b30000;
+  transform: scale(1.03);
+}
+
+.successBox {
+  background: #ffe5e5;
+  color: #b30000;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 14px 18px;
+  border-left: 4px solid #ff4040;
+  border-radius: 6px;
+  margin-top: 14px;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+.mapWrapper {
+  width: 100%;
+  height: 170px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.bottomLine {
+  width: 100%;
+  height: 6px;
+  background: #c40000;
+  margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  .heading {
+    font-size: 38px;
+  }
+}
